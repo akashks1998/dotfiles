@@ -185,7 +185,7 @@ bar {
            statusline #eeeeee
            separator #666666
            #                  border  backgr. text
-           focused_workspace  #00ffff #008855 #ffffff
+           focused_workspace  #00ffff #00aabb #000000
            active_workspace   #333333 #5f676a #ffffff
            inactive_workspace #333333 #222222 #888888
            urgent_workspace   #2f343a #900000 #ffffff
@@ -193,6 +193,7 @@ bar {
 }
 exec --no-startup-id feh --bg-fill --bg-scale ~/Pictures/Wallpapers/wallpaper7.jpg
 exec --no-startup-id gnome-encfs-manager&
+exec --no-startup-id blueman-applet&
 exec --no-startup-id fusermount -u /home/akash/hdd/Personal 
 exec  --no-startup-id xrandr --output HDMI-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
 # Restore GNOME's settings
@@ -217,4 +218,6 @@ mode "$mode_system" {
 }
 bindsym $mod+x mode "$mode_system"
 exec xautolock -time 10 -locker '~/.config/i3/i3lock suspend' &
-for_window [class=.*] border normal 1
+for_window [class=.*] border normal 0
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
