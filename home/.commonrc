@@ -1,0 +1,60 @@
+#!/bin/bash
+# echo "||||||||||||||||||||||||||||||||||||||||||| 
+# ||         _                 _           || User:Akash Kumar Singh
+# ||   _   _| |__  _   _ _ __ | |_ _   _   || $(acpi) 
+# ||  | | | | '_ \| | | | '_ \| __| | | |  || $(date)
+# ||  | |_| | |_) | |_| | | | | |_| |_| |  || 
+# ||   \__,_|_.__/ \__,_|_| |_|\__|\__,_|  ||
+# ||                                       ||
+# |||||||||||||||||||||||||||||||||||||||||||
+
+# " | lolcat
+echo "Today $(date +"%a %b %d")"|lolcat
+cat ~/.temp
+zsh ~/.temp.sh&>~/temp&
+
+
+#a=("mech-and-cow" "sheep" "turtle" "beavis.zen" "default" "gnu" "meow" "skeleton" "tux" "bong" "dragon" "milk" "snowman" "unipony" "bud-frogs" "dragon-and-cow" "hellokitty" "moofasa" "sodomized-sheep" "unipony-smaller" "bunny" "duck" "kiss" "moose" "stegosaurus" "vader" "calvin" "elephant" "kitty" "mutilated" "stimpy" "vader-koala" "cheese" "elephant-in-snake" "koala" "pony" "suse" "www" "cock" "eyes" "kosh" "pony-smaller" "three-eyes" "cower" "flaming-sheep" "luke-koala" "ren" "turkey")
+#cow=${a[RANDOM%45+1]}
+
+
+#RANGE=2
+#number=$RANDOM
+#let "number %= $RANGE"
+#case $number in
+#   0)
+#   command="/usr/games/cowsay"
+#   ;;
+#   1)
+#   command="/usr/games/cowthink"
+#   ;;
+#esac
+# x=$(cat ~/vim.txt|wc -l);
+# sed "$((RANDOM%x+1))q;d" ~/vim.txt | $command -f $cow|lolcat
+
+
+alias ll='ls -alF'
+alias giti='git init;git add .;'
+alias la='ls -A'
+alias l='ls -CF'
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias project='sudo sshfs -o allow_other akashks@gpu2.cse.iitk.ac.in:/users/btech/akashks/Desktop/project ~/Desktop/z_project/'
+alias unmount_proj='sudo umount -f ~/Desktop/z_project/'
+alias myscrot="scrot %Y-%m-%d_$wx$h.png -e 'mv %Y-%m-%d_$wx$h.png ~/Pictures/Screenshots/'"
+alias remind="gcalcli --cal \"akashkumarsingh214@gmail.com\" quick "
+alias note="~/.conky/gcal/.note/.note.sh"
+alias rmnote="~/.conky/gcal/.note/.rmnote.sh"
+alias lexidest="~/.lexidest/lexidest.out"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias gi="~/gi.sh"
+alias put="scp $1 gpu2:~/push/"
+alias template="cat ~/template.cpp>$1"
+alias diary='qwerty123qwerty=$(pwd);cd ~/hdd/Personal/2019/;mkdir -p "$(date +%B)"; cd "$(date +%B)" ; DATE=`date +%y-%m-%d` ;filename="$DATE.md"; test -f $filename || touch $filename; haroopad $filename;cd "$qwerty123qwerty"'
+alias haropad=' test -f $1 || touch $1; haroopad $1'
+alias pantheon-files="io.elementary.files"
