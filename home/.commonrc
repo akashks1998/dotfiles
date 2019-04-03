@@ -10,8 +10,7 @@
 
 # " | lolcat
 echo "Today $(date +"%a %b %d")"|lolcat
-cat ~/.temp
-zsh ~/.temp.sh&>~/temp&
+cat ~/.conky_maildata/.temper|lolcat
 
 
 #a=("mech-and-cow" "sheep" "turtle" "beavis.zen" "default" "gnu" "meow" "skeleton" "tux" "bong" "dragon" "milk" "snowman" "unipony" "bud-frogs" "dragon-and-cow" "hellokitty" "moofasa" "sodomized-sheep" "unipony-smaller" "bunny" "duck" "kiss" "moose" "stegosaurus" "vader" "calvin" "elephant" "kitty" "mutilated" "stimpy" "vader-koala" "cheese" "elephant-in-snake" "koala" "pony" "suse" "www" "cock" "eyes" "kosh" "pony-smaller" "three-eyes" "cower" "flaming-sheep" "luke-koala" "ren" "turkey")
