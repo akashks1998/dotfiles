@@ -7,10 +7,10 @@ default_outline_color 303030
 default_shade_color 303030
 draw_borders no
 draw_graph_borders yes
-draw_outline no
+draw_outline yes
 draw_shades no
 use_xft yes
-gap_x -1320
+gap_x 580
 gap_y 15
 minimum_size 5 5
 net_avg_samples 2

@@ -35,7 +35,7 @@ ZSH_THEME="gitster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -63,7 +63,7 @@ plugins=(
   zsh-syntax-highlighting
   autojump
 )
-source ~/.commonrc
+# source ~/.commonrc
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -95,4 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [[ -s /home/akash/.autojump/etc/profile.d/autojump.sh ]] && source /home/akash/.autojump/etc/profile.d/autojump.sh
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# export NVM_DIR="/home/akash/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

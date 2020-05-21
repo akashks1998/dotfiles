@@ -39,8 +39,6 @@ alias l='ls -CF'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-alias project='sudo sshfs -o allow_other akashks@gpu2.cse.iitk.ac.in:/users/btech/akashks/Desktop/project ~/Desktop/z_project/'
-alias unmount_proj='sudo umount -f ~/Desktop/z_project/'
 alias myscrot="scrot %Y-%m-%d_$wx$h.png -e 'mv %Y-%m-%d_$wx$h.png ~/Pictures/Screenshots/'"
 alias remind="gcalcli --cal \"akashkumarsingh214@gmail.com\" quick "
 alias note="~/.conky/gcal/.note/.note.sh"
@@ -51,8 +49,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-alias gi="~/gi.sh"
-alias put="scp $1 gpu2:~/push/"
+alias ionic1="docker run -ti --rm --net host --privileged -v /dev/bus/usb:/dev/bus/usb -v ~/.gradle:/root/.gradle -v \$PWD:/myApp:rw ionion:latest ionic"
 alias template="cat ~/template.cpp>$1"
 alias diary='qwerty123qwerty=$(pwd);cd ~/hdd/Personal/2019/;mkdir -p "$(date +%B)"; cd "$(date +%B)" ; DATE=`date +%y-%m-%d` ;filename="$DATE.md"; test -f $filename || touch $filename; haroopad $filename;cd "$qwerty123qwerty"'
 alias haropad=' test -f $1 || touch $1; haroopad $1'

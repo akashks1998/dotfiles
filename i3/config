@@ -165,9 +165,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+c exec --no-startup-id google-chrome
-bindsym $mod+n exec --no-startup-id nautilus
-bindsym $mod+f exec io.elementary.files
+bindsym $mod+c exec --no-startup-id chromium-browser 
+bindsym $mod+q exec autorandr -c
 bindsym Print exec gnome-screenshot -i
 
 # switch workspace
@@ -196,7 +195,8 @@ exec --no-startup-id gnome-encfs-manager
 exec --no-startup-id fusuma
 exec --no-startup-id blueman-applet&
 exec --no-startup-id fusermount -u /home/akash/hdd/Personal 
-exec  --no-startup-id xrandr --output HDMI-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 0x0 --rotate normal
+exec --no-startup-id xrandr --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --mode 1920x1080 --pos 1920x0 --rotate normal
+
 # Restore GNOME's settings
 exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 

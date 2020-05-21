@@ -27,7 +27,7 @@ xftfont caviar dreams:size=10
 xftalpha 0.5
 uppercase no
 
-gap_x -350
+gap_x 1560
 gap_y 20
 minimum_size 300 900
 maximum_width 350

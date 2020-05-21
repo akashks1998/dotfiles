@@ -18,14 +18,14 @@ double_buffer yes
 #minimum_size 250 5
 #maximum_width 500
 draw_shades no
-draw_outline no
+draw_outline yes
 draw_borders no
 draw_graph_borders no
 default_color white
 default_shade_color red
-default_outline_color green
+default_outline_color 303030
 alignment top_left
-gap_x -1150
+gap_x 710
 gap_y 0
 no_buffers yes
 uppercase no
